@@ -25,3 +25,5 @@ for i in response_json:
         unique_values_count=data.uniqueValuesCount,
     )
     session.add(field_entry)
+
+session.commit()
