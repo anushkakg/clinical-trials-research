@@ -9,7 +9,8 @@ description = "Clinical trials research project."
 readme = "README.md"
 requires-python = ">=3.8"
 authors = [
-  {name = "wuihee", email = "wuihee@gmail.com" }
+  {name = "Anushka", email = "anushkakgupta@gmail.com"},
+  {name = "Wuihee", email = "wuihee@gmail.com" },
 ]
 dependencies = [
   "httpx",
