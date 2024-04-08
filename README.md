@@ -14,6 +14,11 @@ Install
 pip install -e .
 ```
 
+## Todo
+
+- [ ] Display dataframe of fields.
+- [ ] Integrate database.
+
 ## Resources
 
 - [Clinical Trials API](https://clinicaltrials.gov/data-api/api)
