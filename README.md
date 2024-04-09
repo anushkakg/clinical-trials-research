@@ -14,10 +14,12 @@ Install
 pip install -e .
 ```
 
-## Todo
+## Progress
 
-- [ ] Display dataframe of fields.
-- [ ] Integrate database.
+- [ ] Field Analysis
+  - [x] Display `DataFrame` of fields and summary statistics.
+  - [ ] Settle discrepency in field names.
+  - [ ] Clean up null values.
 
 ## Resources
 
