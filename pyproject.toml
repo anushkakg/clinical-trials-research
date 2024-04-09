@@ -9,18 +9,11 @@ description = "Clinical trials research project."
 readme = "README.md"
 requires-python = ">=3.8"
 authors = [
-  {name = "Anushka", email = "anushkakgupta@gmail.com"},
-  {name = "Wuihee", email = "wuihee@gmail.com" },
+  { name = "Anushka", email = "anushkakgupta@gmail.com" },
+  { name = "Wuihee", email = "wuihee@gmail.com" },
 ]
-dependencies = [
-  "httpx",
-  "jupyter",
-  "matplotlib",
-  "numpy",
-  "pandas",
-  "pydantic",
-  "sqlalchemy"
-]
+dependencies = ["httpx", "jupyter", "matplotlib", "numpy", "pandas", "pydantic"]
 
 [project.optional-dependencies]
+dev = ["tqdm"]
 test = []
