@@ -2,7 +2,8 @@ import httpx
 import pandas as pd
 import tqdm
 
-API_URL = "https://clinicaltrials.gov/api/v2/studies?pageSize=1000"
+API_URL = "https://clinicaltrials.gov/api/v2/studies?query.cond=cancer+OR+cancerous+OR+tumor+OR+carcinoma+OR+carcinogen+OR+chemo+OR+chemotherapy+OR+chondrosarcoma+OR+adenocarcinoma+OR+adenoma+OR+lymphoma+OR+leiomyoma+OR+leukemia+OR+lumpectomy+OR+macroglobulinemia+OR+melanoma+OR+metastasis+OR+micrometastases+OR+metastatic+OR+metastasize+OR+myeloma+OR+oncogenes+OR+oncologist+OR+oncology+OR+osteosarcoma+OR+radiation+therapy+OR+sarcoma&query.term=AREA%5BCompletionDate%5DRANGE%5B2019-01-01%2CMAX%5D&pageSize=1000
+"
 
 response_json = httpx.get(API_URL).json()
 df = pd.json_normalize(response_json.get("studies"))
